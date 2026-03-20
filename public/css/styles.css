@@ -4,3 +4,149 @@
 *:after {
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.container {
+  padding: 1rem;
+}
+h1, h2 {
+  color: #222;
+}
+
+/*HEADER AREA*/
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.siteName h1 {
+  margin: 0;
+}
+
+#tools a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+/*Hero area*/
+
+.hero{
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  display: block;
+}
+.hero-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  max-width: 200px;
+}
+.hero-text button {
+  background: #ffd131;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #555;
+  border-radius: 2px;
+}
+
+/*Reviews area*/
+
+.reviews {
+  padding-left: 20px;
+}
+
+/*UPGRADES AREA - GRID APPLIED*/ 
+
+.upgrade-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.upgrade-grid div {
+  background-color: #ffd131;
+  text-align: center;
+  padding: 10px;
+}
+.upgrade-grid a {
+  display: block;
+  color: #ffffff;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.upgrade-grid a:hover {
+  color: #333;
+}
+
+/*NAV BAR AREA*/
+.nav {
+  background-color: #333;
+}
+
+/*MY NAV LIST*/
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*MY ITENS and LINKS*/
+
+.nav li {
+  margin: 5px 10px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  display: block;
+}
+
+/*HOVER*/ 
+.nav a:hover {
+  background-color: #555;
+  border-radius: 2px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+  .hero-text {
+    position: static;
+    background: none;
+  }
+  .hero img {
+    max-width: 500px;
+  }
+  .upgrade-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
